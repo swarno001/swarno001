@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace, 'Noto Serif Bengali', serif;
+            height: 100vh;
+            background: linear-gradient(to bottom, #87CEEB, #ffffff);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        pre {
+            font-size: 40px;
+            font-family: 'Noto Serif Bengali', serif;
+            white-space: pre-wrap;
+            text-align: center;
+            margin: 0;
+        }
+
+        .imgfoot {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 900px;
+            height: auto;
+        }
+
+        .foot {
+            font-size: 40px;
+            margin: 0;
+            padding: 5px;
+            position: absolute;
+            bottom: 110px;
+            text-align: center;
+        }
+
+        .hamburger {
+            position: fixed;
+            top: 120px;
+            right: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 60px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .bar {
+            width: 100%;
+            height: 4px;
+            background-color: #333;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-menu {
+            position: fixed;
+            top: 200px;
+            right:200px;
+            width: 200px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            z-index: 99;
+            border-radius: 5px;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        .nav-menu ul li {
+            margin: 10px 0;
+        }
+
+        .nav-menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 40px;
+        }
+
+        .nav-menu.active {
+            display: flex;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-menu" id="navMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="khorip-1.html">খরিপ-১</a></li>
+            <li><a href="khorip-2.html">খরিপ-২</a></li>
+            <li><a href="robi.html">রবি</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <pre>
+    "বার্তা" ওয়েব অ্যাপ্লিকেশনটি "সত্যান্বেষী" কোম্পানির তৈরিকৃত। বাংলাদেশের নতুন প্রজন্মকে কৃষিকাজে উদ্ভুদ্ধ করতে "বার্তা" ৭ সেপ্টেম্বর ২০২৪ যাত্রা শুরু করে। আবহাওয়া অনুযায়ী ফসল চাষের তথ্য সহজলভ্য করতে "বার্তা" অনন্য। ২০২২ সালে "সত্যান্বেষী" প্রতিষ্ঠিত হয়।
+
+Developer: Swarnojit Bala
+                     (CEO, Satyanweshi)
+     HSC 25 (Khulna Public College)
+    </pre>
+
+    <img src="Satyanweshi.png" class="imgfoot" alt="Satyanweshi Logo">
+
+    <div class="foot"><i>~FEEL FREE TO SPREAD KNOWLEDGE~</i></div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
