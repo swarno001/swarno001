@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace, 'Noto Sans Bengali', sans-serif;
     background: linear-gradient(to bottom, #87CEEB, #ffffff);
-    overflow: auto;
+    overflow: auto; /* Allows scrolling if content overflows */
 }
 
 .img1 {
@@ -78,7 +78,7 @@ html, body {
 .imgv {
     position: absolute;
     top: 550px;
-    left: 0px;
+    left: 0;
     width: 100%;
     height: auto;
     z-index: 1;
@@ -111,7 +111,7 @@ button {
 }
 
 #nextBtn {
-    left: 0px;
+    left: 0;
     top: 950px;
     width: 200px;
     height: 100px;
@@ -235,131 +235,3 @@ button:disabled {
 
 .hamburger.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .img1 {
-        width: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -150px;
-    }
-
-    .weather-info {
-        font-size: 30px;
-        top: 220px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .foot {
-        font-size: 30px;
-        top: 1300px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .img2 {
-        width: 300px;
-        top: 1400px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .foot2 {
-        font-size: 30px;
-        top: 1330px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .foot3 {
-        font-size: 25px;
-        top: 1380px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .imgv {
-        top: 600px;
-    }
-
-    .buttons {
-        top: 800px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #prevBtn, #nextBtn {
-        width: 100%;
-        height: 60px;
-        font-size: 18px;
-    }
-
-    .images1, .images2, .images3 {
-        width: 50%;
-        left: 50%;
-        transform: translateX(-50%) scaleX(-1);
-    }
-}
-
-@media (max-width: 480px) {
-    .weather-info {
-        font-size: 20px;
-        top: 150px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .foot {
-        font-size: 25px;
-        top: 1000px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .img2 {
-        width: 250px;
-        top: 1050px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .foot2 {
-        font-size: 25px;
-        top: 1020px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .foot3 {
-        font-size: 20px;
-        top: 1040px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .imgv {
-        top: 650px;
-    }
-
-    .buttons {
-        top: 700px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #prevBtn, #nextBtn {
-        width: 100%;
-        height: 50px;
-        font-size: 16px;
-    }
-
-    .images1, .images2, .images3 {
-        width: 70%;
-        top: 200px;
-        left: 15%;
-        transform: scaleX(-1);
-    }
-}
