@@ -3,7 +3,8 @@ html, body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace, 'Noto Sans Bengali', sans-serif;
     background: linear-gradient(to bottom, #87CEEB, #ffffff);
-    overflow: auto; /* Allow scrolling if content overflows */
+   
+    display: block;
     max-width: 100%;
 }
 
@@ -20,7 +21,7 @@ html, body {
     font-size: 40px;
     margin: 0;
     padding: 5px;
-    position: absolute;
+    position: relative;
     top: 270px;
     left: 80px;
 }
@@ -44,9 +45,9 @@ html, body {
     font-size: 35px;
     margin: 0; 
     padding: 35px;
-    position: absolute;
+    position: relative;
     top: 1750px;
-    left: 370px;
+    left:370px;
 }
 
 .img2 {
@@ -62,7 +63,7 @@ html, body {
     font-size: 35px;
     margin: 0;
     padding: 5px;
-    position: absolute;
+    position: relative;
     top: 1850px;
     left: 370px;
 }
@@ -71,7 +72,7 @@ html, body {
     font-size: 30px;
     margin: 0;
     padding: 5px;
-    position: absolute;
+    position: relative;
     top: 1900px;
     left: 250px;
 }
@@ -79,7 +80,7 @@ html, body {
 .imgv {
     position: absolute;
     top: 550px;
-    left: 0;
+    left: 0px;
     width: 100%;
     height: auto;
     z-index: 1;
@@ -108,11 +109,11 @@ button {
     right: 50px;
     top: 950px;
     width: 200px;
-    height: 100px;
+    height:100px;
 }
 
 #nextBtn {
-    left: 0;
+    left: 0px;
     top: 950px;
     width: 200px;
     height: 100px;
@@ -126,7 +127,7 @@ button:disabled {
 #date {
     position: absolute;
     top: 500px;
-    left: 50%;
+    left: 46%;
     transform: translateX(-50%);
     font-size: 35px;
     color: #333;
@@ -136,7 +137,7 @@ button:disabled {
 #bengali-date {
     position: absolute;
     top: 490px;
-    left: 50%;
+    left:140px;
     transform: translateX(-50%);
     font-size: 35px;
     color: #333;
@@ -145,7 +146,7 @@ button:disabled {
 
 .images3 {
     position: absolute;
-    top: 330px;
+    top:330px;
     left: 650px;
     width: 250px;
     height: auto;
@@ -155,7 +156,7 @@ button:disabled {
 
 .images2 {
     position: absolute;
-    top: 250px;
+    top:250px;
     left: 600px;
     width: 340px;
     height: auto;
@@ -165,7 +166,7 @@ button:disabled {
 
 .images1 {
     position: absolute;
-    top: 220px;
+    top:220px;
     left: 550px;
     width: 340px;
     height: auto;
@@ -173,9 +174,9 @@ button:disabled {
 }
 
 .hamburger {
-    position: fixed;
+    position:fixed;
     top: 120px;
-    right: 100px;
+    right:100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -193,17 +194,17 @@ button:disabled {
 }
 
 .nav-menu {
-    position: fixed;
+    position:fixed;
     top: 200px;
     right: 100px;
     width: 200px;
-    height: 400px;
+    height:400px;
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
     flex-direction: column;
     align-items: center;
     z-index: 99;
-    border-radius: 5px;
+    border-radius:5px;
 }
 
 .nav-menu ul {
@@ -239,16 +240,16 @@ button:disabled {
 }
 
 /* Media Queries */
-@media (max-width: 2408px) {
+@media (max-width: 768px) {
     .img1 {
         width: 80%;
         left: 50%;
         transform: translateX(-50%);
-        top: -250px;
+        top: -150px;
     }
 
     .weather-info {
-        font-size: 35px;
+        font-size: 30px;
         top: 220px;
         left: 50%;
         transform: translateX(-50%);
@@ -256,28 +257,28 @@ button:disabled {
 
     .foot {
         font-size: 30px;
-        top: 1500px;
+        top: 1200px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .img2 {
         width: 300px;
-        top: 1550px;
+        top: 1300px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .foot2 {
         font-size: 30px;
-        top: 1500px;
+        top: 1220px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .foot3 {
         font-size: 25px;
-        top: 1550px;
+        top: 1270px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -287,9 +288,10 @@ button:disabled {
     }
 
     .buttons {
-        top: 750px;
+        top: 800px;
         left: 50%;
         transform: translateX(-50%);
+        flex-direction: column;
     }
 
     #prevBtn, #nextBtn {
@@ -299,53 +301,38 @@ button:disabled {
     }
 
     .images1, .images2, .images3 {
-        width: 60%;
+        width: 50%;
         left: 50%;
         transform: translateX(-50%) scaleX(-1);
     }
 }
 
-@media (max-width: 1080px) {
-    .img1 {
-        width: 70%;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -150px;
-    }
-
+@media (max-width: 480px) {
     .weather-info {
-        font-size: 30px;
-        top: 180px;
-        left: 50%;
-        transform: translateX(-50%);
+        font-size: 20px;
+        top: 150px;
     }
 
     .foot {
         font-size: 25px;
-        top: 1300px;
+        top: 900px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .img2 {
         width: 250px;
-        top: 1350px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 950px;
     }
 
     .foot2 {
         font-size: 25px;
-        top: 1300px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 920px;
     }
 
     .foot3 {
         font-size: 20px;
-        top: 1350px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 940px;
     }
 
     .imgv {
@@ -354,8 +341,6 @@ button:disabled {
 
     .buttons {
         top: 700px;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     #prevBtn, #nextBtn {
@@ -372,108 +357,3 @@ button:disabled {
     }
 }
 
-@media (max-width: 768px) {
-    .img1 {
-        width: 60%;
-        top: -50px;
-    }
-
-    .weather-info {
-        font-size: 25px;
-        top: 140px;
-    }
-
-    .foot {
-        font-size: 20px;
-        top: 1000px;
-    }
-
-    .img2 {
-        width: 200px;
-        top: 1050px;
-    }
-
-    .foot2 {
-        font-size: 20px;
-        top: 1000px;
-    }
-
-    .foot3 {
-        font-size: 18px;
-        top: 1050px;
-    }
-
-    .imgv {
-        top: 700px;
-    }
-
-    .buttons {
-        top: 750px;
-    }
-
-    #prevBtn, #nextBtn {
-        width: 100%;
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .images1, .images2, .images3 {
-        width: 80%;
-        top: 150px;
-        left: 10%;
-        transform: scaleX(-1);
-    }
-}
-
-@media (max-width: 480px) {
-    .img1 {
-        width: 50%;
-        top: 0;
-    }
-
-    .weather-info {
-        font-size: 20px;
-        top: 100px;
-    }
-
-    .foot {
-        font-size: 16px;
-        top: 800px;
-    }
-
-    .img2 {
-        width: 150px;
-        top: 850px;
-    }
-
-    .foot2 {
-        font-size: 16px;
-        top: 800px;
-    }
-
-    .foot3 {
-        font-size: 14px;
-        top: 850px;
-    }
-
-    .imgv {
-        top: 750px;
-    }
-
-    .buttons {
-        top: 800px;
-    }
-
-    #prevBtn, #nextBtn {
-        width: 100%;
-        height: 30px;
-        font-size: 12px;
-    }
-
-    .images1, .images2, .images3 {
-        width: 90%;
-        top: 100px;
-        left: 5%;
-        transform: scaleX(-1);
-    }
-}
