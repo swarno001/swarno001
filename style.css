@@ -3,8 +3,7 @@ html, body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace, 'Noto Sans Bengali', sans-serif;
     background: linear-gradient(to bottom, #87CEEB, #ffffff);
-    overflow: auto; /* Allow scrolling if content overflows */
-    max-width: 100%;
+    overflow: auto;
 }
 
 .img1 {
@@ -290,7 +289,6 @@ button:disabled {
         top: 800px;
         left: 50%;
         transform: translateX(-50%);
-        flex-direction: column;
     }
 
     #prevBtn, #nextBtn {
