@@ -4,6 +4,7 @@ html, body {
     font-family: 'Courier New', Courier, monospace, 'Noto Sans Bengali', sans-serif;
     background: linear-gradient(to bottom, #87CEEB, #ffffff);
     overflow: auto; /* Allow scrolling if content overflows */
+    max-width: 100%;
 }
 
 .img1 {
@@ -89,6 +90,7 @@ html, body {
     top: 680px;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0;
 }
 
 button {
