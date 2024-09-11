@@ -3,13 +3,9 @@ html, body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace, 'Noto Sans Bengali', sans-serif;
     background: linear-gradient(to bottom, #87CEEB, #ffffff);
+    overflow: auto; /* Allow scrolling if content overflows */
     display: block;
     max-width: 100%;
-}
-
-/* Reset overflow hidden */
-body {
-    overflow: auto; /* Allow scrolling if content overflows */
 }
 
 .img1 {
@@ -261,28 +257,28 @@ button:disabled {
 
     .foot {
         font-size: 30px;
-        top: 1300px; /* Adjusted to fit better on smaller screens */
+        top: 1300px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .img2 {
         width: 300px;
-        top: 1400px; /* Adjusted to fit better on smaller screens */
+        top: 1400px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .foot2 {
         font-size: 30px;
-        top: 1330px; /* Adjusted to fit better on smaller screens */
+        top: 1330px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .foot3 {
         font-size: 25px;
-        top: 1380px; /* Adjusted to fit better on smaller screens */
+        top: 1380px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -315,28 +311,36 @@ button:disabled {
     .weather-info {
         font-size: 20px;
         top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .foot {
         font-size: 25px;
-        top: 1000px; /* Further adjusted for smaller screens */
+        top: 1000px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .img2 {
         width: 250px;
-        top: 1050px; /* Further adjusted for smaller screens */
+        top: 1050px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .foot2 {
         font-size: 25px;
-        top: 1020px; /* Further adjusted for smaller screens */
+        top: 1020px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .foot3 {
         font-size: 20px;
-        top: 1040px; /* Further adjusted for smaller screens */
+        top: 1040px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .imgv {
@@ -345,6 +349,8 @@ button:disabled {
 
     .buttons {
         top: 700px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     #prevBtn, #nextBtn {
